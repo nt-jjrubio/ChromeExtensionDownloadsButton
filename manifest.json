@@ -1,0 +1,19 @@
+{
+  "name": "Chrome Downloads Button",
+  "description": "Shortcut to open downloads tab",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "scripting", "downloads"],
+  "action": {
+    "default_title": "Open downloads",
+    "default_icon": {
+      "16": "/images/downloading16.png",
+      "32": "/images/downloading32.png",
+      "48": "/images/downloading64.png",
+      "128": "/images/downloading128.png"
+    }
+  },
+  "background": {
+      "service_worker": "background.js"
+  }
+}
